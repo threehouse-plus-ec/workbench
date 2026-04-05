@@ -1,0 +1,17 @@
+# Licence — Split Architecture
+
+This repository uses different licences for different layers,
+following the T(h)reehouse +EC corporate design blueprint (Section 0.3).
+
+| Layer | Content | Licence |
+| --- | --- | --- |
+| Build scripts, page chrome, CSS | `_build/`, generated HTML chrome | MIT |
+| Methodology blueprint | `BLUEPRINT.md` | CC BY-SA 4.0 |
+| Authored content | `*/breakwater/`, `*/references/`, `*/essay/` | CC BY-NC-SA 4.0 |
+| Templates | `_templates/` | CC BY-SA 4.0 |
+| Design assets | `assets/` (copied from cd-rules) | MIT (per cd-rules) |
+
+When in doubt, the more restrictive licence applies.
+
+See the T(h)reehouse +EC corporate design blueprint for rationale:
+https://github.com/threehouse-plus-ec/cd-rules
