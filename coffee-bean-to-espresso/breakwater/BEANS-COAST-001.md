@@ -1,4 +1,6 @@
-# Beans Coastline Dossier — “Origin & Material Substrate”
+# Beans Dossier — “Origin & Material Substrate”
+
+*A reference document on the green (unroasted) coffee bean: what it is, where it comes from, how it is processed, what can be measured about it, and what chemical compounds it contains.*
 
 **Dossier ID:** BEANS-COAST-001  
 **Version:** 0.3.0 (release candidate — post-Council review)  
@@ -6,14 +8,16 @@
 **Parent:** Coffee / Espresso Essay (CL-2026-010)  
 **Tier:** T1b (Metrological)  
 **Stance:** Guardian (with Architect and Scout review incorporated)  
-**Curated from:** TC-BEANS-001 v1.1 raw returns (Claude, Kimi K2, GPT-5.4, Perplexity, Gemini — Gemini quarantined pending source verification)
+**Curated from:** TC-BEANS-001 v1.1 raw returns (Claude, Kimi K2, GPT-5.4, Perplexity, Gemini — Gemini set aside pending source verification)
 
-**Status key:**
+**How to read the status markers:**
 
-- `FROZEN` — verified, stable, ready for citation.
-- `PROVISIONAL` — supported by evidence but awaiting replication or independent verification.
-- `OPEN` — unresolved; requires Breakwater analysis.
-- `QUARANTINED` — source provenance insufficient; excluded from parameter tables pending verification.
+Each fact or measurement in this dossier carries a status marker:
+
+- `FROZEN` — verified across multiple independent sources, stable, safe to cite.
+- `PROVISIONAL` — supported by evidence but based on fewer sources or awaiting independent confirmation.
+- `OPEN` — unresolved question; needs further investigation.
+- `QUARANTINED` — the original source could not be independently verified; excluded from the main tables until checked.
 
 -----
 
@@ -21,365 +25,425 @@
 
 A green coffee bean is a seed that has never been roasted. The sugars that will caramelise, the acids that will define brightness, the proteins that will react with those sugars to generate aroma — all are already present, or absent, before the roaster applies heat. This dossier records the state of that starting material.
 
-The document is organised around five parameter groups, each covering a distinct aspect of the green bean’s identity: what species and cultivar it is (§1 Botanical Identity), where and how it grew (§2 Terroir Envelope), what happened between harvest and export (§3 Post-Harvest Processing), what can be measured with instruments (§4 Physical Metrics), and what molecules it contains (§5 Precursor Chemistry). These five groups follow the irreversibility boundaries of the bean’s formation. Genetics is fixed at pollination. Terroir accumulates during growth. Processing intervenes after harvest. Physical metrics are assessed at the point of trade. Chemistry encodes the final state of the substrate before thermal transformation begins.
+The document covers five topics, each dealing with a different aspect of the green bean’s identity:
 
-Each parameter group follows a uniform internal structure: (a) declared parameters with status markers, (b) validity contract, (c) open disputes, and (d) notes for downstream interface where relevant.
+- **§1 Botanical Identity** — what species and variety the bean belongs to.
+- **§2 Terroir Envelope** — the growing environment (altitude, climate, soil) and how it shapes the bean.
+- **§3 Post-Harvest Processing** — what happens between picking the cherry and exporting the green bean.
+- **§4 Physical Metrics** — the measurable physical properties used for grading and quality control.
+- **§5 Precursor Chemistry** — the chemical compounds inside the bean that will later produce flavour and aroma during roasting.
 
-Two cautions for the reader. First, the ranges in this dossier span multiple origins, cultivars, and studies. Any single lot of green coffee will occupy a narrower window within these ranges. Second, this dossier describes what is in the bean, not what ends up in the cup. The transformation from precursor chemistry to sensory experience passes through roasting and extraction — those are separate dossiers with their own boundary conditions.
+These five topics are not arbitrary. They follow the order in which the bean’s identity is formed, and each stage is essentially irreversible: genetics are fixed when the plant is pollinated, growing conditions accumulate over months, processing intervenes after harvest, physical measurements are taken at the point of trade, and chemistry represents the final state of the bean before heat is applied.
 
-Current evidence supports that post-harvest processing can alter the bean’s metabolomic and precursor profile, not merely sort or expose pre-existing potential. The extent and mechanism of this reshaping remain parameter-dependent and are not yet fully closed. This is flagged as BW-01 in §7.
+Each topic section follows the same structure: (a) declared parameters with status markers, (b) a validity contract explaining when those numbers can and cannot be trusted, (c) open disputes, and (d) notes on how this information connects to later stages (roasting, brewing).
+
+Two cautions for the reader. First, the ranges in this dossier span many origins, varieties, and studies. Any single batch of green coffee will fall within a narrower window. Second, this dossier describes what is *in* the bean, not what ends up *in the cup*. The journey from bean chemistry to taste passes through roasting and brewing — those are covered in separate documents.
+
+One important finding runs through the entire dossier: current evidence suggests that post-harvest processing does not simply reveal what was already in the bean. It can actively change the bean’s chemical makeup. The full extent of this reshaping is still being studied (see §7, question BW-01).
 
 -----
 
 ## 0 — Boundary Condition
 
-**Nothing in this dossier has undergone thermal transformation.** The moment Maillard reactions or pyrolysis begin, the material belongs to the Roast dossier. Processing-induced fermentation is included because it occurs before export and defines the green bean’s chemical starting state — but the dossier acknowledges that processing can reshape precursor chemistry, not merely expose it (see Anti-Claim AC-06; Breakwater BW-01).
+**Nothing in this dossier has been roasted.** The moment heat triggers browning reactions (known as Maillard reactions — the same chemistry that browns bread and seared meat) or breaks down compounds through high temperature (pyrolysis), the material belongs to the Roast dossier. Fermentation during processing is included here because it happens before the bean is exported and it shapes the bean’s chemical starting state.
 
-**Out of scope:** roast degree, first crack, development time, espresso extraction variables, cup sensory evaluation except where directly linked to green-bean composition by experimental evidence, roasting-loss data (relocated to Appendix A as interface reference).
+**Not covered here:** roast level, espresso extraction, brew methods, or taste descriptions, except where a direct, experimentally demonstrated link to green-bean composition exists. A reference table for what happens to these compounds during roasting is provided in Appendix A.
 
 -----
 
 ## 1 — Botanical Identity
 
+### Key terms used in this section
+
+- **Species:** The broadest biological grouping. The two species that matter commercially are *Coffea arabica* (Arabica) and *Coffea canephora* (commonly called Robusta).
+- **Variety / Cultivar:** A named type within a species. “Variety” usually means a naturally occurring subtype; “cultivar” (short for “cultivated variety”) means one that has been deliberately selected or bred by humans. In the coffee trade, these terms are often used interchangeably.
+- **Landrace:** A locally adapted, genetically diverse population — not a single uniform type.
+- **Hybrid group:** A family of cultivars created by crossing two different species or varieties.
+- **Trade designation:** A commercial label (like “Ethiopian Heirloom”) that may not correspond to a single biological category.
+
 ### 1.1 Declared Parameters
 
-|Parameter                     |Value                                                                  |Status|Confidence|Source                          |
-|------------------------------|-----------------------------------------------------------------------|------|----------|--------------------------------|
-|C. arabica chromosome count   |2n = 4x = 44 (allotetraploid)                                          |FROZEN|STRONG    |Salojärvi 2024; Scalabrin 2020  |
-|C. canephora chromosome count |2n = 2x = 22 (diploid)                                                 |FROZEN|STRONG    |Multiple concordant             |
-|Arabica parentage             |C. canephora × C. eugenioides                                          |FROZEN|STRONG    |Salojärvi 2024                  |
-|Polyploidy event timing       |350,000–610,000 years ago                                              |FROZEN|STRONG    |Salojärvi 2024 (Nature Genetics)|
-|Self-fertility                |Arabica: self-pollinating (unique in genus); Robusta: cross-pollinating|FROZEN|STRONG    |WCR; SCA literature             |
-|Foundational cultivar lineages|Typica group, Bourbon group                                            |FROZEN|STRONG    |WCR Varieties Catalog (2024)    |
-|Cultivated genetic diversity  |<1% of wild Arabica diversity                                          |FROZEN|STRONG    |Salojärvi 2024                  |
+|Parameter                       |Value                                                                                                       |Status|Confidence|Source                          |
+|--------------------------------|------------------------------------------------------------------------------------------------------------|------|----------|--------------------------------|
+|Arabica chromosome count        |44 chromosomes (four copies of each — a “tetraploid,” meaning it has double the usual set)                  |FROZEN|STRONG    |Salojärvi 2024; Scalabrin 2020  |
+|Robusta chromosome count        |22 chromosomes (the standard two copies — a “diploid”)                                                      |FROZEN|STRONG    |Multiple concordant             |
+|How Arabica originated          |A natural cross between two other species: *C. canephora* (Robusta) and *C. eugenioides*                    |FROZEN|STRONG    |Salojärvi 2024                  |
+|When this cross occurred        |350,000–610,000 years ago                                                                                   |FROZEN|STRONG    |Salojärvi 2024 (Nature Genetics)|
+|Pollination                     |Arabica pollinates itself (unique in the coffee genus); Robusta requires cross-pollination from other plants|FROZEN|STRONG    |WCR; SCA literature             |
+|Foundational lineages           |Nearly all cultivated Arabica descends from two groups: Typica and Bourbon                                  |FROZEN|STRONG    |WCR Varieties Catalog (2024)    |
+|Genetic diversity in cultivation|Cultivated Arabica contains less than 1% of the genetic diversity found in wild populations                 |FROZEN|STRONG    |Salojärvi 2024                  |
 
-**Contextual note (not a bean-intrinsic parameter):** Arabica accounts for ~60% of global production, Robusta ~40% (ICO data, temporally variable). This ratio constrains market context but does not describe the material substrate.
+**Context (not a property of the bean itself):** Arabica accounts for roughly 60% of global coffee production, Robusta roughly 40% (International Coffee Organization data; these shares shift over time).
 
 ### 1.2 Cultivar Classification
 
-The following uses WCR terminology. Terms are labelled by taxonomic rank: species, botanical variety, cultivar, landrace, hybrid group, or trade designation.
+Classification follows the World Coffee Research (WCR) Varieties Catalog, the most widely accepted reference. Terms are labelled by their biological category (see key terms above).
 
-**Bourbon–Typica lineage (botanical varieties / cultivar groups):** Typica (tall, low yield, high rust susceptibility, valued for sweetness and clarity); Bourbon (moderately tall, higher yield than Typica, red/yellow variants); Caturra (Bourbon mutation, dwarf habit, high rust susceptibility); Catuaí (Caturra × Mundo Novo cross, compact, high yield, moderate rust susceptibility); Mundo Novo (Typica × Bourbon natural hybrid, vigorous, tall).
+**Bourbon–Typica lineage (varieties / cultivar groups):** Typica (tall plant, low yield, highly vulnerable to coffee leaf rust, valued for sweetness and clarity in the cup); Bourbon (moderately tall, higher yield than Typica, exists in red and yellow variants); Caturra (a natural dwarf mutation of Bourbon, high rust vulnerability); Catuaí (a cross between Caturra and Mundo Novo, compact, high yield, moderate rust vulnerability); Mundo Novo (a natural cross between Typica and Bourbon, vigorous and tall).
 
-**Ethiopian landraces:** Genetically heterogeneous, locally adapted populations — not single cultivars. “Ethiopian Heirloom” is a trade designation that collapses >10,000 identified varieties.
+**Ethiopian landraces:** Genetically diverse, locally adapted populations — not single uniform types. The commercial label “Ethiopian Heirloom” is a trade designation that lumps together more than 10,000 identified varieties.
 
-**Kenyan selections:** SL-28 and SL-34 (Scott Agricultural Laboratories, 1930s; Bourbon-related genetic group; high cup quality, rust susceptible). Ruiru 11 (SL28 × Rume Sudan hybrid, 1980s; rust resistant). Batian (Ruiru 11 × SL28 cross; rust resistant, balanced cup).
+**Kenyan selections:** SL-28 and SL-34 (developed by Scott Agricultural Laboratories in Kenya in the 1930s; genetically related to the Bourbon group; prized for cup quality but vulnerable to rust). Ruiru 11 (a hybrid combining SL28 and Rume Sudan genetics from the 1980s; rust resistant). Batian (a cross between Ruiru 11 and SL28; rust resistant, balanced cup).
 
-**Gesha/Geisha (cultivar):** Ethiopian origin (Gori Gesha forest accessions). Elongated seeds, low-to-moderate yield. Showed close relationships to both wild and cultivated Arabica in the 2024 genome study. Quality expression is strongly terroir- and process-dependent, not intrinsic (see AC-07).
+**Gesha/Geisha (cultivar):** Originally from the Gori Gesha forest in Ethiopia. Produces elongated seeds with low-to-moderate yield. The 2024 genome study showed it shares ancestry with both wild Ethiopian populations and the Bourbon/Typica groups. Its reputation for exceptional quality depends heavily on where and how it is grown and processed — it is not automatically superior regardless of conditions (see Anti-Claim AC-07).
 
-**Introgressed hybrid groups:** Catimor (Caturra × Timor Hybrid); Sarchimor (Villa Sarchi × Timor Hybrid); Castillo (Colombian Cenicafé selection); Starmaya (F1 hybrid, Marsellesa × wild Ethiopian/Sudanese mutant). All carry C. canephora rust-resistance genes via Timor Hybrid ancestry. Variable cup quality.
+**Disease-resistant hybrid groups:** Catimor (Caturra × Timor Hybrid); Sarchimor (Villa Sarchi × Timor Hybrid); Castillo (a Colombian selection); Starmaya (a first-generation hybrid). All carry disease-resistance genes from Robusta, introduced through the Timor Hybrid — a natural cross between Arabica and Robusta discovered on the island of Timor in the early twentieth century. Cup quality varies.
 
 ### 1.3 Validity Contract
 
-- Chromosome counts are fixed genetic facts; no revision expected.
-- Cultivar classifications follow WCR Varieties Catalog (2024 edition) as the reference authority. Where WCR and trade usage diverge, WCR takes precedence.
-- “Ethiopian Heirloom” must not be treated as a single cultivar in any downstream analysis.
+- Chromosome counts are fixed genetic facts and will not change.
+- Cultivar classifications follow the WCR Varieties Catalog (2024 edition). Where trade usage and WCR classification disagree, WCR takes precedence in this dossier.
+- “Ethiopian Heirloom” must not be treated as a single variety in any analysis built on this dossier.
 
 ### 1.4 Open Disputes
 
-- The terminology “variety” vs “cultivar” vs “landrace” is used inconsistently across scientific, breeding, and trade sources. This dossier follows the WCR convention but flags that reclassification of some entries (e.g. SL-28, Gesha) into genetic groups is still ongoing (Salojärvi 2024).
+- The terms “variety,” “cultivar,” and “landrace” are used inconsistently across scientific papers, breeding programmes, and the coffee trade. This dossier follows the WCR convention but notes that reclassification of some entries (e.g. SL-28, Gesha) into broader genetic groups is ongoing.
 
-### 1.5 Downstream Interface — Recent Genomics (2020–2026)
+### 1.5 Connections to Other Work — Recent Genetic Research (2020–2026)
 
-|Entry                                                                         |Status     |Source                                        |
-|------------------------------------------------------------------------------|-----------|----------------------------------------------|
-|Salojärvi et al. 2024: chromosome-level assemblies, population split ~30.5 kya|FROZEN     |Nature Genetics 56:721–731                    |
-|Scalabrin et al. 2020: Red Bourbon genome, 46,562 gene models                 |FROZEN     |Scientific Reports 10:4642                    |
-|Kona Typica genome 2024: 1.13 Gb, 65,458 genes, 99.1% BUSCO                   |PROVISIONAL|PRJCA043259; single agent (Kimi)              |
-|Berny Mier y Teran et al. 2025: global Arabica variety trials                 |PROVISIONAL|Frontiers in Plant Science; single agent (GPT)|
-|C. stenophylla GWAS 2025: SNPs for flowering/drought tolerance                |QUARANTINED|Gemini; verify doi:10.3389/fgene.2025.1554029 |
+|Study                                                                                                                                                               |Status     |Source                                                 |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|-------------------------------------------------------|
+|Salojärvi et al. 2024: detailed genetic maps of Arabica and its parent species; traced the split between wild and cultivated populations to roughly 30,500 years ago|FROZEN     |Nature Genetics 56:721–731                             |
+|Scalabrin et al. 2020: first complete Arabica genome (Red Bourbon variety), identified 46,562 genes                                                                 |FROZEN     |Scientific Reports 10:4642                             |
+|Kona Typica genome 2024: a separate Arabica genome assembly with 65,458 genes identified                                                                            |PROVISIONAL|PRJCA043259; reported by one source only               |
+|Berny Mier y Teran et al. 2025: global field trials comparing Arabica varieties                                                                                     |PROVISIONAL|Frontiers in Plant Science; reported by one source only|
+|*C. stenophylla* genetic study 2025: identified genetic markers linked to drought tolerance in a climate-resilient coffee species                                   |QUARANTINED|Source could not be independently verified             |
 
 -----
 
 ## 2 — Terroir Envelope
 
+*Terroir refers to the combination of environmental conditions — altitude, climate, soil, rainfall, and shade — that shape how the coffee plant grows and what ends up inside the bean.*
+
 ### 2.1 Declared Parameters
 
-|Parameter          |Arabica             |Robusta       |Status|Confidence|Notes                                   |
-|-------------------|--------------------|--------------|------|----------|----------------------------------------|
-|Typical elevation  |1,200–2,200 m a.s.l.|200–800 m     |FROZEN|MODERATE  |Strongly latitude-dependent             |
-|Optimal temperature|15–24 °C            |24–30 °C      |FROZEN|STRONG    |                                        |
-|Annual rainfall    |1,200–2,200 mm      |2,200–3,000 mm|FROZEN|STRONG    |Distinct dry period needed for flowering|
-|Soil pH (optimal)  |5.5–6.0             |5.0–6.5       |FROZEN|MODERATE  |                                        |
+|Parameter                |Arabica                      |Robusta       |Status|Confidence|Notes                                               |
+|-------------------------|-----------------------------|--------------|------|----------|----------------------------------------------------|
+|Typical growing elevation|1,200–2,200 m above sea level|200–800 m     |FROZEN|MODERATE  |Varies strongly with latitude                       |
+|Optimal temperature      |15–24 °C                     |24–30 °C      |FROZEN|STRONG    |                                                    |
+|Annual rainfall          |1,200–2,200 mm               |2,200–3,000 mm|FROZEN|STRONG    |A distinct dry period is needed to trigger flowering|
+|Soil pH (optimal)        |5.5–6.0 (slightly acidic)    |5.0–6.5       |FROZEN|MODERATE  |                                                    |
 
-### 2.2 Altitude–Chemistry Interactions
+### 2.2 How Altitude Affects Bean Chemistry
 
-|Effect                        |Direction            |Magnitude                       |Conditions       |Status     |Source                           |
-|------------------------------|---------------------|--------------------------------|-----------------|-----------|---------------------------------|
-|Caffeine vs altitude          |Decreases            |–0.12 g/kg per 100 m            |Ethiopian Arabica|FROZEN     |Worku 2018                       |
-|CGA vs altitude               |Decreases            |–1.23 g/kg per 100 m            |Ethiopian Arabica|FROZEN     |Worku 2018                       |
-|Sucrose vs altitude (washed)  |Increases            |+3.02 g/kg per 100 m            |Washed only      |FROZEN     |Worku 2018                       |
-|Sucrose vs altitude (natural) |No significant effect|+0.36 g/kg per 100 m (n.s.)     |Natural only     |FROZEN     |Worku 2018                       |
-|Acidity vs altitude (shaded)  |Increases            |+0.22 cup-score points per 100 m|Under shade      |FROZEN     |Worku 2018                       |
-|Acidity vs altitude (unshaded)|No significant effect|—                               |Without shade    |FROZEN     |Worku 2018                       |
-|Bean density (800–900 m)      |—                    |619.75 ± 13.72 kg/m³            |Nepal, Arabica   |PROVISIONAL|Nepal study 2021 (via Roast Mag.)|
-|Bean density (1,400–1,500 m)  |—                    |687.5 ± 8.18 kg/m³              |Nepal, Arabica   |PROVISIONAL|Nepal study 2021 (via Roast Mag.)|
-|Fatty acids vs altitude       |Increase             |Not precisely quantified        |Pu’er study 2024 |PROVISIONAL|Kimi, Perplexity (secondary)     |
+Higher altitude generally means cooler temperatures, which slows cherry ripening. This extended growing period affects the chemical compounds that accumulate inside the bean. The following table summarises the best-quantified relationships, all from a single well-designed Ethiopian study (Worku et al. 2018):
+
+|What changes                                         |Direction            |How much (per 100 m gain in altitude)     |Conditions              |Status     |
+|-----------------------------------------------------|---------------------|------------------------------------------|------------------------|-----------|
+|Caffeine                                             |Decreases            |–0.12 g/kg                                |Ethiopian Arabica       |FROZEN     |
+|Chlorogenic acids (bitter/astringent compounds)      |Decreases            |–1.23 g/kg                                |Ethiopian Arabica       |FROZEN     |
+|Sucrose (the main sugar) — washed beans              |Increases            |+3.02 g/kg                                |Washed processing only  |FROZEN     |
+|Sucrose — naturally processed beans                  |No significant effect|+0.36 g/kg (not statistically significant)|Natural processing only |FROZEN     |
+|Perceived acidity (cup score) — shaded trees         |Increases            |+0.22 points                              |Under shade trees       |FROZEN     |
+|Perceived acidity — unshaded trees                   |No significant effect|—                                         |Full sun                |FROZEN     |
+|Bean density (how heavy per unit volume) at 800–900 m|—                    |619.75 ± 13.72 kg/m³                      |Nepal, Arabica          |PROVISIONAL|
+|Bean density at 1,400–1,500 m                        |—                    |687.5 ± 8.18 kg/m³                        |Nepal, Arabica          |PROVISIONAL|
+|Fatty acid content                                   |Increases            |Not precisely quantified                  |China (Pu’er) study 2024|PROVISIONAL|
+
+**The most important finding in this table:** The effect of altitude on sucrose depends on how the coffee is processed. In washed beans, sucrose clearly increases with altitude. In naturally processed beans, it does not. This means that growing environment and processing method are not independent — they interact.
 
 ### 2.3 Validity Contract
 
-- Altitude is a proxy variable. The causal drivers are temperature, oxygen availability, and light regime, all of which co-vary with elevation. The dossier does not endorse altitude as a direct causal agent.
-- Terroir effects are interaction-dependent: altitude × shade, altitude × processing, altitude × cultivar. Single-variable claims are flagged as compressed heuristics.
-- Soil → flavour claims require controlled studies isolating soil chemistry from other terroir variables. Currently: WEAK evidence.
+- Altitude itself does not directly cause these changes. It is a stand-in for temperature, oxygen levels, and sunlight, which all change together as you go higher. This dossier does not treat altitude as a direct cause.
+- The effects of environment depend on interactions: altitude combined with shade, altitude combined with processing method, altitude combined with variety. Claims based on a single variable (“higher = better”) are oversimplifications.
+- Claims that specific soil minerals produce specific flavours lack controlled experimental support. The evidence is mostly observational.
 
 ### 2.4 Open Disputes
 
-|Claim type                               |Evidence level                                           |
-|-----------------------------------------|---------------------------------------------------------|
-|Altitude → bean density                  |STRONG (multiple studies)                                |
-|Altitude → sugar/acid accumulation       |MODERATE (mechanism established, interaction-dependent)  |
-|Altitude → cup score                     |MODERATE (consistent correlations; causality complex)    |
-|Soil mineral → specific flavours         |WEAK (mostly correlational)                              |
-|Shade → slower maturation                |STRONG (established mechanism)                           |
-|Shade → specific flavour outcomes        |MODERATE (some support; confounds common)                |
-|“Terroir” as holistic quality determinant|PRACTITIONER (useful framework; limited predictive power)|
+|Claim                                          |Strength of evidence                                                   |
+|-----------------------------------------------|-----------------------------------------------------------------------|
+|Higher altitude produces denser beans          |STRONG (multiple studies confirm)                                      |
+|Higher altitude increases sugar and acid levels|MODERATE (mechanism understood, but depends on other factors)          |
+|Higher altitude improves cup scores            |MODERATE (consistent pattern, but hard to isolate from other variables)|
+|Specific soil minerals create specific flavours|WEAK (mostly uncontrolled observations)                                |
+|Shade slows cherry ripening                    |STRONG (well-established biology)                                      |
+|Shade produces specific flavour outcomes       |MODERATE (some support, but many confounding factors)                  |
+|“Terroir” as a holistic quality predictor      |PRACTITIONER (useful concept, but limited predictive power)            |
 
-### 2.5 Downstream Interface
+### 2.5 Connections to Other Dossiers
 
-The Worku 2018 sucrose × altitude × processing interaction (§2.2) has direct implications for the Roast dossier: the sugar substrate available for Maillard reactions depends on both terroir and processing, not terroir alone. Shade × altitude interactions (Bosselmann et al., Cassamo et al. 2022) suggest that shade management is not uniformly beneficial and must be specified by elevation band.
+The sucrose × altitude × processing interaction has direct consequences for roasting: the amount of sugar available for browning reactions depends on both where the coffee was grown *and* how it was processed, not on growing conditions alone. Shade management is not uniformly beneficial — its effects depend on the elevation band.
 
 -----
 
 ## 3 — Post-Harvest Processing
 
+*Processing is what happens between picking the coffee cherry and exporting the dried green bean. It involves removing the fruit layers, fermenting, and drying. Different methods produce different chemical outcomes in the bean.*
+
+### Key terms
+
+- **Mucilage:** The sticky, sugary layer surrounding the bean inside the cherry. How much of it stays on the bean during drying is the key variable distinguishing processing methods.
+- **Fermentation:** Microbial activity (bacteria and yeasts breaking down sugars) that occurs naturally during processing. It can be encouraged, controlled, or minimised depending on the method.
+- **Water activity (aw):** A measure of how much water in the bean is available for microbial growth (explained further in §4). Safe storage requires aw below 0.70.
+
 ### 3.1 Declared Parameters
 
-|Method                |Mucilage removal                 |Fermentation window       |Typical drying|Status     |
-|----------------------|---------------------------------|--------------------------|--------------|-----------|
-|Washed (wet)          |Complete (fermentation + washing)|12–72 h in water          |10–15 days    |FROZEN     |
-|Natural (dry)         |None (fruit dries intact)        |Continuous during drying  |15–30 days    |FROZEN     |
-|Honey / pulped-natural|Partial (spectrum: 10–100%)      |During drying             |10–22 days    |FROZEN     |
-|Anaerobic             |Varies                           |24–120 h in sealed tanks  |Varies        |FROZEN     |
-|Carbonic maceration   |None initially                   |24–120 h in CO₂ atmosphere|Varies        |PROVISIONAL|
+|Method                |What happens to the mucilage                                               |Fermentation time                               |Typical drying time|Status     |
+|----------------------|---------------------------------------------------------------------------|------------------------------------------------|-------------------|-----------|
+|Washed (wet)          |Completely removed by fermentation and washing                             |12–72 hours in water                            |10–15 days         |FROZEN     |
+|Natural (dry)         |Stays on — the whole cherry dries intact                                   |Continuous throughout drying                    |15–30 days         |FROZEN     |
+|Honey / pulped-natural|Partially kept (10–100%, creating a spectrum from “white” to “black” honey)|During drying                                   |10–22 days         |FROZEN     |
+|Anaerobic             |Varies                                                                     |24–120 hours in sealed, oxygen-free tanks       |Varies             |FROZEN     |
+|Carbonic maceration   |Stays on initially                                                         |24–120 hours in a carbon-dioxide-rich atmosphere|Varies             |PROVISIONAL|
 
-**Notes on chemical effects (confidence-labelled):**
+**What these methods do to the bean’s chemistry:**
 
-- Washed processing reduces variability in mucilage-derived metabolites and tends to preserve intrinsic bean character. [MODERATE — consistent with multiple sources but not quantitatively bounded]
-- Natural processing results in higher residual sugar and more variable moisture distribution compared with washed lots from the same origin. [MODERATE — established pattern, not universal]
-- Processing method significantly affects bioactive and volatile compound profiles in green beans (Várady et al. 2022, P = 0.04 for CGA differences). [FROZEN]
+- Washed processing tends to produce beans with less variation in sugar-related compounds and a “cleaner” chemical profile. [MODERATE confidence — consistent finding, but not precisely quantified]
+- Natural processing tends to leave more residual sugar in the bean and creates more variation in moisture distribution. [MODERATE — established pattern, but not universal]
+- Processing method significantly affects the levels of bioactive compounds and aromatic precursors in the green bean (Várady et al. 2022, statistically significant at P = 0.04 for chlorogenic acid differences). [FROZEN]
 
-### 3.2 Microbial Ecology
+### 3.2 Microbes Involved in Fermentation
 
-Dominant taxa reported across studies (not necessarily universal — representative of selected fermentation conditions, not exhaustive):
+The following bacteria and yeasts have been identified as dominant in different fermentation conditions. These are representative findings from selected studies, not universal rules:
 
-|Condition             |Dominant bacterial genera                        |Dominant yeast genera                      |Status     |
-|----------------------|-------------------------------------------------|-------------------------------------------|-----------|
-|Washed fermentation   |*Weissella*, *Leuconostoc*, *Lactiplantibacillus*|—                                          |PROVISIONAL|
-|Semi-anaerobic        |*Acetobacter* (increased)                        |—                                          |PROVISIONAL|
-|Anaerobic fermentation|—                                                |*Pichia*, *Issatchenkia*, *Wickerhamomyces*|PROVISIONAL|
+|Fermentation condition     |Dominant bacteria                                                       |Dominant yeasts                            |Status     |
+|---------------------------|------------------------------------------------------------------------|-------------------------------------------|-----------|
+|Washed (underwater)        |*Weissella*, *Leuconostoc*, *Lactiplantibacillus* (lactic acid bacteria)|—                                          |PROVISIONAL|
+|Semi-anaerobic (low oxygen)|*Acetobacter* (acetic acid bacteria, increased)                         |—                                          |PROVISIONAL|
+|Fully anaerobic (no oxygen)|—                                                                       |*Pichia*, *Issatchenkia*, *Wickerhamomyces*|PROVISIONAL|
 
 ### 3.3 Validity Contract
 
-- Processing changes the metabolomic profile of the bean itself, not just surface metabolites (SCA 25 Magazine, Issue 10; Várady et al. 2022/2024). The extent is parameter-dependent.
-- “Carbonic maceration” in coffee is not used with wine-industry strictness (GPT flag). The term covers closed/CO₂-rich cherry fermentation, not always true intracellular fermentation.
-- The dossier treats processing as the first intentional transformation. It belongs in the Beans dossier because it occurs before export and defines the green bean’s chemical starting state.
+- Processing changes the internal chemistry of the bean, not just the surface. This is supported by research from the Specialty Coffee Association and by Várady et al. (2022/2024). How much it changes depends on the specific method and conditions.
+- “Carbonic maceration” is borrowed from winemaking terminology, but the coffee industry uses the term loosely. In wine, it refers to fermentation happening inside intact grape cells. In coffee, it often just means fermentation in a sealed, CO₂-rich container.
+- Processing is included in this dossier (rather than a separate one) because it happens before the bean is exported and defines the chemical state in which the bean enters trade.
 
 ### 3.4 Open Disputes
 
-- Optimal fermentation times vary widely by climate, altitude, and microbial environment; universal recommendations are not evidence-based.
-- Many claims about anaerobic/carbonic maceration producing specific flavour outcomes lack controlled experimental validation. [MARKETING risk]
-- The line between genuine analytical innovation and marketing theatre is not always clear in experimental processing terminology.
+- There is no evidence-based universal rule for optimal fermentation times. They vary with climate, altitude, and the specific microbial community present.
+- Many claims about anaerobic and carbonic maceration producing specific flavour outcomes have not been validated by controlled experiments. Some of this language is marketing rather than science.
 
-### 3.5 Downstream Interface — Defect Pathways
+### 3.5 Connections to Other Dossiers — Common Defects
 
-|Defect           |Cause                                        |Detection                               |Status|
-|-----------------|---------------------------------------------|----------------------------------------|------|
-|Over-fermentation|Extended/uncontrolled fermentation           |Sour, vinegary, phenolic off-flavours   |FROZEN|
-|Mould / OTA      |Uneven drying, moisture >12.5%, aw >0.70     |Visual; cannot be eliminated by roasting|FROZEN|
-|Phenolic taint   |Contaminated water, uncontrolled fermentation|Medicinal, band-aid flavours            |FROZEN|
-|Quakers          |Underripe cherries                           |Invisible in green; pale after roasting |FROZEN|
+|Defect                                     |Cause                                                         |How it is detected                                           |Status|
+|-------------------------------------------|--------------------------------------------------------------|-------------------------------------------------------------|------|
+|Over-fermentation                          |Fermentation went too long or was uncontrolled                |Sour, vinegary, or medicinal off-flavours                    |FROZEN|
+|Mould / ochratoxin A (OTA, a harmful toxin)|Uneven drying, moisture above 12.5%, water activity above 0.70|Visible mould; OTA cannot be removed by roasting             |FROZEN|
+|Phenolic taint                             |Contaminated water or uncontrolled fermentation               |Medicinal or “band-aid” flavours                             |FROZEN|
+|Quakers                                    |Underripe cherries that lack sugars and amino acids           |Invisible in green beans; appear as pale beans after roasting|FROZEN|
 
 -----
 
 ## 4 — Physical Metrics
 
+*These are the measurable physical properties used by buyers, graders, and roasters to assess green coffee quality and predict how it will behave during roasting and storage.*
+
+### Key terms
+
+- **Moisture content:** The percentage of the bean’s total weight that is water.
+- **Water activity (aw):** A number between 0 and 1 that measures how much of the water in the bean is “free” — that is, available for microbes to use and for chemical reactions to occur. A bean can have acceptable moisture content but still be unstable if its water activity is too high. Think of it this way: moisture tells you how much water is present; water activity tells you how much of it is dangerous.
+- **Bulk density:** How heavy a container of beans is per unit volume, including the air spaces between beans. This is different from the density of the bean material itself (true density). When this dossier says “density,” it means bulk density unless stated otherwise.
+- **Screen size:** Beans are sorted by passing them through metal plates with round holes. The hole sizes are measured in sixty-fourths of an inch. A “Screen 18” bean passes through an 18/64-inch (7.1 mm) hole but not a smaller one.
+
 ### 4.1 Declared Parameters
 
-|Parameter               |Target / Range                                |Method                                                                |Standard         |Status|
-|------------------------|----------------------------------------------|----------------------------------------------------------------------|-----------------|------|
-|Moisture content        |10–12% (specialty); 9–13% (SCA/ICO)           |Oven-drying ISO 6673 (ref.); electronic meters (field)                |SCA, ICO         |FROZEN|
-|Water activity (aw)     |0.55–0.65 (recommended); <0.70 (SCA threshold)|Dedicated aw meter                                                    |SCA              |FROZEN|
-|Bulk density (Arabica)  |670–750 g/L                                   |Mass/volume in graduated cylinder (bulk density — includes air spaces)|Industry practice|FROZEN|
-|Screen size             |1/64 inch increments (Screen 13–20)           |Standardised round-hole sieves                                        |SCA, regional    |FROZEN|
-|Defect count (specialty)|0 primary; ≤5 secondary in 350 g sample       |Visual grading, controlled lighting                                   |SCA GACCS        |FROZEN|
+|What is measured              |Target / Range                                                    |How it is measured                                                                     |Standard                    |Status|
+|------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------|----------------------------|------|
+|Moisture content              |10–12% (specialty target); 9–13% (acceptable under SCA/ICO rules) |Reference: oven-drying at 105 °C (ISO standard 6673). Field: electronic moisture meters|SCA, ICO                    |FROZEN|
+|Water activity (aw)           |0.55–0.65 (recommended); must be below 0.70 (SCA threshold)       |Dedicated water activity meter                                                         |SCA                         |FROZEN|
+|Bulk density (Arabica)        |670–750 g/L                                                       |Weigh a known volume of beans in a graduated cylinder                                  |Industry practice           |FROZEN|
+|Screen size                   |Screens 13–20 (sizes from ~5.2 mm to ~8.0 mm)                     |Standardised sieves with round holes                                                   |SCA and regional conventions|FROZEN|
+|Defect count (specialty grade)|Zero major defects; no more than 5 minor defects in a 350 g sample|Visual inspection under controlled lighting                                            |SCA GACCS                   |FROZEN|
 
-### 4.2 Regional Grading Conventions
+### 4.2 Regional Grading Systems
 
-|Grade                   |Region         |Requirement              |Status|
-|------------------------|---------------|-------------------------|------|
-|Supremo                 |Colombia       |Screen 17+               |FROZEN|
-|Excelso                 |Colombia       |Screen 14–16             |FROZEN|
-|AA                      |Kenya          |Screen 17–18             |FROZEN|
-|AB                      |Kenya          |Screen 15–16             |FROZEN|
-|PB (Peaberry)           |Kenya          |Screen 13                |FROZEN|
-|SHB (Strictly Hard Bean)|Central America|Grown above 1,200–1,350 m|FROZEN|
+Different countries use different names for their size grades:
+
+|Grade name              |Country        |Requirement                                                            |Status|
+|------------------------|---------------|-----------------------------------------------------------------------|------|
+|Supremo                 |Colombia       |Screen 17 or larger (~6.7 mm+)                                         |FROZEN|
+|Excelso                 |Colombia       |Screen 14–16 (~5.6–6.3 mm)                                             |FROZEN|
+|AA                      |Kenya          |Screen 17–18 (~6.7–7.1 mm)                                             |FROZEN|
+|AB                      |Kenya          |Screen 15–16 (~6.0–6.3 mm)                                             |FROZEN|
+|PB (Peaberry)           |Kenya          |Screen 13 (~5.2 mm; a single round bean instead of the usual flat pair)|FROZEN|
+|SHB (Strictly Hard Bean)|Central America|Grown above 1,200–1,350 m (an altitude-based grade, not a size grade)  |FROZEN|
 
 ### 4.3 Validity Contract
 
-- Moisture content and water activity are not interchangeable. aw is the more predictive metric for storage safety.
-- Bulk density ≠ true density. Any cross-source density comparison requires method specification.
-- Screen size measures uniformity, not flavour quality.
+- Moisture content and water activity measure different things and are not interchangeable. Water activity is the better predictor of storage safety and shelf life.
+- Bulk density and true density are different measurements. Comparing density values from different sources only makes sense if the same method was used.
+- Screen size tells you about uniformity (important for even roasting), not about flavour quality. A small, clean bean can taste better than a large, defective one.
 
 ### 4.4 Open Disputes
 
-- **SCA defect sample size (BW-02): RESOLVED.** Architect review confirms 350 g per current SCA GACCS (2023/2024 revision). The 300 g figure in some agent returns derives from legacy ICO/FAO standards or Robusta-specific protocols.
-- Density alone does not predict quality; cultivar, processing, and storage can produce exceptions.
+- **Sample size question (resolved):** Some older references cite a 300 g sample for defect grading; the current SCA standard specifies 350 g. The 300 g figure comes from older international standards or Robusta-specific protocols.
+- Bean density alone does not predict quality. Variety, processing, and storage conditions all play a role.
 
-### 4.5 Defect Equivalence Ratios
+### 4.5 How Defects Are Counted
 
-|Defect type        |Count for 1 full defect|Status|
-|-------------------|-----------------------|------|
-|Full black bean    |1                      |FROZEN|
-|Partial black bean |2–3                    |FROZEN|
-|Broken/chipped bean|5                      |FROZEN|
-|Floater            |5                      |FROZEN|
-|Insect-damaged bean|2–5                    |FROZEN|
+The SCA system counts defects using equivalence ratios — not every flawed bean counts as one full defect:
 
-Status upgraded to FROZEN following BW-02 resolution (350 g confirmed per SCA GACCS 2023/2024).
+|Type of defect                    |How many = 1 full defect|Status|
+|----------------------------------|------------------------|------|
+|Full black bean                   |1                       |FROZEN|
+|Partial black bean                |2–3                     |FROZEN|
+|Broken or chipped bean            |5                       |FROZEN|
+|Floater (an abnormally light bean)|5                       |FROZEN|
+|Insect-damaged bean               |2–5                     |FROZEN|
 
 -----
 
 ## 5 — Precursor Chemistry
 
+*The green bean contains hundreds of chemical compounds. This section focuses on the ones that matter most for flavour and aroma — not because they taste good in raw form, but because they are the raw materials (precursors) that roasting will later transform into the flavours we recognise in coffee.*
+
+### Key terms
+
+- **Dry weight basis (dwb):** Concentrations expressed as a percentage of the bean’s weight after all water has been removed. This allows fair comparison between beans with different moisture levels.
+- **Chlorogenic acids (CGAs):** A family of plant compounds that contribute to bitterness and astringency. Robusta has more of them than Arabica, which is one reason Robusta tends to taste harsher.
+- **Sucrose:** Ordinary table sugar. The most important single sugar in green coffee. During roasting, it breaks down and reacts with amino acids to produce the browning reactions (Maillard reactions) responsible for much of coffee’s flavour and colour.
+- **Trigonelline:** A compound related to vitamin B3. It breaks down during roasting into aromatic compounds (pyridines) that contribute to coffee’s smell.
+- **Caffeine:** A bitter-tasting stimulant. Unlike most other compounds here, caffeine is highly heat-stable and survives roasting almost unchanged.
+- **Lipids (fats):** Contribute to mouthfeel (the “body” of the coffee) and act as carriers for aromatic compounds.
+- **Free amino acids:** Small protein fragments that react with sugars during roasting (Maillard reactions) to produce flavour and colour.
+
 ### 5.1 Declared Parameters (Green Bean, Dry Weight Basis)
 
-|Compound                 |Arabica range|Robusta range      |Status     |Confidence|Key sources                          |
-|-------------------------|-------------|-------------------|-----------|----------|-------------------------------------|
-|Total carbohydrates      |50–60%       |34–55%             |FROZEN     |STRONG    |Multiple reviews                     |
-|Sucrose                  |5–9%         |0.9–5%             |FROZEN     |STRONG    |Clifford 1985; Caporaso 2018; Ky 2001|
-|Reducing sugars          |~1% or less  |Similar            |FROZEN     |STRONG    |PMC 8704863                          |
-|Chlorogenic acids (total)|3.5–8.4%     |7–14%              |FROZEN     |STRONG    |Jaiswal 2019; Ky 2001; PMC 7773871   |
-|Caffeine                 |0.8–1.7%     |1.7–4.0%           |FROZEN     |STRONG    |Multiple concordant                  |
-|Trigonelline             |0.8–1.3%     |0.6–1.0%           |FROZEN     |STRONG    |Ky 2001; PMC 7773871                 |
-|Lipids                   |13–17%       |7–11%              |FROZEN     |STRONG    |Multiple reviews                     |
-|Proteins                 |10–15%       |10–15%             |FROZEN     |STRONG    |Multiple reviews                     |
-|Free amino acids         |0.3–3%       |Higher than Arabica|PROVISIONAL|MODERATE  |Range varies by source               |
-|Minerals (ash)           |3–5%         |3–5%               |FROZEN     |STRONG    |Multiple reviews                     |
+|Compound                           |Arabica range|Robusta range      |Status     |Confidence|
+|-----------------------------------|-------------|-------------------|-----------|----------|
+|Total carbohydrates                |50–60%       |34–55%             |FROZEN     |STRONG    |
+|Sucrose                            |5–9%         |0.9–5%             |FROZEN     |STRONG    |
+|Reducing sugars (glucose, fructose)|~1% or less  |Similar            |FROZEN     |STRONG    |
+|Chlorogenic acids (total)          |3.5–8.4%     |7–14%              |FROZEN     |STRONG    |
+|Caffeine                           |0.8–1.7%     |1.7–4.0%           |FROZEN     |STRONG    |
+|Trigonelline                       |0.8–1.3%     |0.6–1.0%           |FROZEN     |STRONG    |
+|Lipids (fats)                      |13–17%       |7–11%              |FROZEN     |STRONG    |
+|Proteins                           |10–15%       |10–15%             |FROZEN     |STRONG    |
+|Free amino acids                   |0.3–3%       |Higher than Arabica|PROVISIONAL|MODERATE  |
+|Minerals (ash)                     |3–5%         |3–5%               |FROZEN     |STRONG    |
 
-### 5.2 Range Reconciliation Notes
+### 5.2 Where Sources Disagreed on Ranges
 
-|Compound        |Narrower estimate         |Wider estimate           |Adopted range|Rationale                                                                                      |
-|----------------|--------------------------|-------------------------|-------------|-----------------------------------------------------------------------------------------------|
-|Robusta sucrose |0.9–4.85% (Caporaso HSI)  |4.0–7.0% (Kimi)          |0.9–5%       |Caporaso is single-study but well-controlled; Kimi’s upper bound likely includes non-dwb values|
-|CGA (Arabica)   |2.8–5.4 g/100g (Ethiopian)|4.0–8.4% (broader survey)|3.5–8.4%     |Ethiopian range is origin-specific; Jaiswal 2019 captures more genotypes                       |
-|Free amino acids|0.3–0.6% (Kimi)           |0.4–3% (Perplexity)      |0.3–3%       |Wide range reflects origin/cultivar diversity                                                  |
+When different research agents returned different numbers, the dossier adopted the range shown above based on the following reasoning:
 
-### 5.3 Correlation Structure
+|Compound                   |Narrower estimate                               |Wider estimate                                      |Adopted |Why                                                                                                 |
+|---------------------------|------------------------------------------------|----------------------------------------------------|--------|----------------------------------------------------------------------------------------------------|
+|Robusta sucrose            |0.9–4.85% (from a well-controlled imaging study)|4.0–7.0% (from a broader but less controlled survey)|0.9–5%  |The imaging study had tighter methodology; the wider range may include measurement-basis differences|
+|Chlorogenic acids (Arabica)|2.8–5.4% (Ethiopian samples only)               |4.0–8.4% (global survey)                            |3.5–8.4%|The Ethiopian range is one origin; the wider range captures more genetic diversity                  |
+|Free amino acids           |0.3–0.6% (one agent)                            |0.4–3% (another agent)                              |0.3–3%  |The wide range reflects genuine diversity across origins and varieties                              |
 
-|Relationship                    |Direction         |Status     |Source             |
-|--------------------------------|------------------|-----------|-------------------|
-|Fat ↔ caffeine                  |Negative          |PROVISIONAL|Kimi (single agent)|
-|Fat ↔ CGA, sucrose, trigonelline|Positive          |PROVISIONAL|Kimi (single agent)|
-|Trigonelline ↔ caffeine (green) |Positive          |PROVISIONAL|Kimi (single agent)|
-|Caffeine: genetic determination |~94% species-level|PROVISIONAL|Kimi (single agent)|
+### 5.3 How Compounds Relate to Each Other
+
+Some compounds in the green bean are statistically correlated. These relationships were reported by one research agent (Kimi) and await independent confirmation:
+
+|Relationship                                          |Direction                                                                                       |Status     |
+|------------------------------------------------------|------------------------------------------------------------------------------------------------|-----------|
+|Fat content ↔ caffeine                                |Beans with more fat tend to have less caffeine                                                  |PROVISIONAL|
+|Fat content ↔ chlorogenic acids, sucrose, trigonelline|Beans with more fat tend to have more of these compounds                                        |PROVISIONAL|
+|Trigonelline ↔ caffeine (in green beans)              |Tend to increase together                                                                       |PROVISIONAL|
+|Caffeine determination                                |Roughly 94% of a bean’s caffeine level is determined by its species, not its growing environment|PROVISIONAL|
 
 ### 5.4 Validity Contract
 
-- All ranges are dry-weight basis unless explicitly marked “as-is.”
-- Ranges capture inter-origin and inter-cultivar variation; any single-origin study will show a narrower window.
-- Volatile precursor mapping at the green-bean stage remains incomplete. This is a genuine research gap, not a search failure.
-- Aroma-precursor → roasted-aroma mapping is statistical, not mechanistically closed. Strictly: the compounds in §5.1 are non-volatile precursors to volatile aromatics generated during roasting. The dossier does not endorse deterministic precursor-to-flavour claims.
+- All concentration ranges are expressed on a dry-weight basis unless marked otherwise.
+- These ranges cover many origins and varieties. Any single lot will fall within a narrower window.
+- Scientists do not yet have a complete map of which green-bean compounds produce which specific roasted-coffee flavours. The compounds listed in §5.1 are non-volatile precursors — they do not smell or taste like coffee themselves, but they are the raw materials from which volatile aromatic compounds are generated during roasting. This dossier does not endorse claims that a specific precursor level guarantees a specific flavour.
+- Mapping from green-bean chemistry to roasted-coffee aroma is a statistical relationship, not a fully understood causal mechanism. This is a genuine gap in current knowledge, not a limitation of this review.
 
 ### 5.5 Open Disputes
 
-- Exact ranges for CGA and lipids vary with dry-basis conventions, origin, cultivar, and analytical method.
-- The relative importance of specific precursor classes (CGA vs sucrose vs proteins) for flavour formation is not settled; consensus is that multiple classes interact.
-- NIR prediction models for sugars and lipids show variable accuracy across studies.
+- Exact concentration ranges for chlorogenic acids and lipids differ between studies depending on measurement method, how “dry weight” was defined, and which origins and varieties were sampled.
+- Which class of precursors matters most for flavour (chlorogenic acids vs sucrose vs proteins) is not settled. The current consensus is that they all interact.
+- Rapid screening methods (such as near-infrared spectroscopy) show variable accuracy for predicting sugar and lipid content compared with laboratory methods.
 
 -----
 
 ## 6 — Anti-Claims Register
 
-|ID   |Anti-claim                                        |Risk                                                                                 |Status                    |Source agents   |
-|-----|--------------------------------------------------|-------------------------------------------------------------------------------------|--------------------------|----------------|
-|AC-01|“Ethiopian = fruity”                              |Compressed heuristic, not causal                                                     |ACTIVE                    |All             |
-|AC-02|“Higher altitude = better coffee”                 |Correlation; mechanism under-specified; interaction-dependent                        |ACTIVE                    |All             |
-|AC-03|“Natural process = more flavour”                  |Confounds fermentation variables with method                                         |ACTIVE                    |All             |
-|AC-04|“Single-origin guarantees quality”                |Marketing frame, not analytical                                                      |ACTIVE                    |Claude, Kimi    |
-|AC-05|“Older beans are stale”                           |Oversimplifies; aged coffees exist as a category                                     |ACTIVE                    |Claude          |
-|AC-06|“Processing merely reveals latent potential”      |Processing can reshape metabolomic profile (SCA research); extent parameter-dependent|ACTIVE — EVIDENCE CONTRARY|Claude, GPT     |
-|AC-07|“Gesha quality is intrinsic and universal”        |Conflates cultivar potential with terroir + processing dependence                    |ACTIVE                    |All             |
-|AC-08|“Washed = higher quality”                         |Processing-method bias; not supported as universal                                   |ACTIVE                    |GPT, Perplexity |
-|AC-09|“Volcanic soils inherently produce higher quality”|Frequently asserted; controlled evidence sparse                                      |ACTIVE                    |Perplexity      |
-|AC-10|“Bigger beans = better coffee”                    |Screen size measures uniformity, not flavour quality                                 |ACTIVE                    |Kimi, Perplexity|
+*These are statements that are widely repeated in coffee discourse but are not adequately supported by the evidence reviewed in this dossier. They are not opinions — they are claims whose evidential basis was tested and found insufficient.*
+
+|ID   |The claim                                                |Why it is problematic                                                                                                    |Status                    |
+|-----|---------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|--------------------------|
+|AC-01|“Ethiopian coffee = fruity”                              |An oversimplified shorthand, not a causal relationship. Ethiopia has >10,000 varieties grown across diverse conditions.  |ACTIVE                    |
+|AC-02|“Higher altitude = better coffee”                        |A correlation that masks complex interactions with temperature, shade, variety, and processing method                    |ACTIVE                    |
+|AC-03|“Natural process = more flavour”                         |Confuses the processing method with the many fermentation variables within it                                            |ACTIVE                    |
+|AC-04|“Single-origin guarantees quality”                       |A marketing concept, not an analytical one                                                                               |ACTIVE                    |
+|AC-05|“Older beans are stale”                                  |Oversimplifies; deliberately aged coffees are a recognised category                                                      |ACTIVE                    |
+|AC-06|“Processing merely reveals what is already in the bean”  |Evidence shows processing can change the bean’s internal chemistry, not just expose it. The extent depends on the method.|ACTIVE — EVIDENCE CONTRARY|
+|AC-07|“Gesha quality is intrinsic and universal”               |Conflates the variety’s genetic potential with the growing and processing conditions needed to express it                |ACTIVE                    |
+|AC-08|“Washed = higher quality”                                |A bias toward one processing method, not supported as a universal rule                                                   |ACTIVE                    |
+|AC-09|“Volcanic soils inherently produce higher quality coffee”|Frequently claimed, but controlled experiments isolating soil type from other variables are rare                         |ACTIVE                    |
+|AC-10|“Bigger beans = better coffee”                           |Screen size measures uniformity (important for even roasting), not flavour quality                                       |ACTIVE                    |
 
 -----
 
-## 7 — Open Questions for Breakwater
+## 7 — Open Questions
 
-|ID   |Question                                                                                          |Ledger entry|Status         |Resolution                                                                                                                                                                                                                                                                                       |
-|-----|--------------------------------------------------------------------------------------------------|------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|BW-01|Does processing change latent potential or only select from it?                                   |CL-2026-016 |UNDERDETERMINED|Architect proposes: processing is a secondary biosynthetic event (via microbial fermentation) introducing exogenous metabolites not present at harvest. Extent is method-dependent — anaerobic/inoculated processes introduce more than traditional washed. Graded resolution, not binary.       |
-|BW-02|SCA defect sample size — 300 g or 350 g?                                                          |—           |RESOLVED       |350 g per current SCA GACCS (2023/2024). 300 g is legacy ICO/FAO or Robusta-specific.                                                                                                                                                                                                            |
-|BW-03|Arabica polyploidy: 10–50 kya (Gemini) or 350–610 kya (Salojärvi 2024)?                           |—           |RESOLVED       |Salojärvi 2024 is definitive. Gemini figure deprecated.                                                                                                                                                                                                                                          |
-|BW-04|Can volatile precursors at green-bean stage be mapped to roasted volatiles?                       |CL-2026-017 |OPEN           |Research gap. No complete mapping exists. Not a dossier decision — requires primary experimental work.                                                                                                                                                                                           |
-|BW-05|Sucrose × altitude interaction is process-dependent — implications for “latent potential” framing?|CL-2026-018 |OPEN           |Linked to BW-01. If processing is secondary biosynthesis, then terroir deposits precursors and processing determines which subset is expressed and which exogenous compounds are added. The “latent potential” framing holds for the genetic and terroir layers but not for the processing layer.|
+*These are questions raised during the research and review process that could not be fully answered. Three have been assigned formal tracking numbers for future investigation.*
 
------
-
-## 8 — Source Authority Hierarchy
-
-|Tier|Source type             |Examples                                                          |
-|----|------------------------|------------------------------------------------------------------|
-|1   |Peer-reviewed literature|Salojärvi 2024; Worku 2018; Caporaso 2018; Ky 2001; Jaiswal 2019  |
-|2   |Standards bodies        |SCA GACCS; ISO 6673; ICO quality standards                        |
-|3   |Institutional research  |WCR Varieties Catalog; CIRAD; Coffee Science Foundation           |
-|4   |Scientific books        |Illy & Viani; Flament; Hoffmann                                   |
-|5   |Practitioner / industry |Barista Hustle; Scott Rao; Cropster; Roast Magazine               |
-|6   |Marketing               |Flagged as [MARKETING]; included only when no better source exists|
+|ID   |Question                                                                                                                                                       |Tracking number|Status         |Current best answer                                                                                                                                                                                                                                                                                                                   |
+|-----|---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|BW-01|Does processing create new compounds in the bean, or does it only select from what was already there?                                                          |CL-2026-016    |UNDERDETERMINED|Processing appears to be a secondary biological event: microbes during fermentation introduce compounds that were not present in the cherry at harvest. The extent varies by method — anaerobic and inoculated processes introduce more new material than traditional washed processing. This is a graded answer, not a simple yes/no.|
+|BW-02|Is the SCA defect grading sample 300 g or 350 g?                                                                                                               |—              |RESOLVED       |350 g, per the current SCA standard (2023/2024). The 300 g figure comes from older international standards.                                                                                                                                                                                                                           |
+|BW-03|When did the Arabica species originate — 10,000–50,000 years ago or 350,000–610,000 years ago?                                                                 |—              |RESOLVED       |350,000–610,000 years ago (Salojärvi et al. 2024, Nature Genetics). The shorter timeframe, from one research agent, is not supported by the primary literature.                                                                                                                                                                       |
+|BW-04|Can specific green-bean compounds be reliably mapped to specific roasted-coffee aromas?                                                                        |CL-2026-017    |OPEN           |Not yet. No complete mapping exists. This is a genuine research gap.                                                                                                                                                                                                                                                                  |
+|BW-05|If sucrose accumulation with altitude depends on processing method (Worku 2018), what does this mean for the idea that the bean has a fixed “latent potential”?|CL-2026-018    |OPEN           |It means the “latent potential” idea works for genetics and growing conditions but breaks down at the processing stage. Processing does not just reveal what the environment put there — it determines whether the environment’s contribution is expressed at all.                                                                    |
 
 -----
 
-## 9 — Provenance
+## 8 — How Sources Were Ranked
 
-This dossier was curated from raw research notes gathered under TC-BEANS-001 v1.1. Contributing agents:
+|Priority   |Type of source                 |Examples                                                                                                                         |
+|-----------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+|1 (highest)|Peer-reviewed scientific papers|Salojärvi 2024; Worku 2018; Caporaso 2018; Ky 2001; Jaiswal 2019                                                                 |
+|2          |Standards organisations        |Specialty Coffee Association (SCA); International Organisation for Standardisation (ISO); International Coffee Organization (ICO)|
+|3          |Research institutions          |World Coffee Research (WCR); CIRAD (French agricultural research centre); Coffee Science Foundation                              |
+|4          |Scientific books               |Illy & Viani, *Espresso Coffee*; Flament, *Coffee Flavor Chemistry*; Hoffmann, *The World Atlas of Coffee*                       |
+|5          |Industry practitioners         |Barista Hustle; Scott Rao; Cropster; Roast Magazine                                                                              |
+|6 (lowest) |Marketing material             |Included only when no better source exists, and always labelled as such                                                          |
 
-|Agent           |Files          |Unique contributions                                                                                                                     |
-|----------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------|
-|Claude Opus 4.6 |1 (all groups) |Worku 2018 interaction data; Salojärvi 2024                                                                                              |
-|Kimi K2         |5              |Kona Typica genome; microbial genera; correlation structure; defect equivalence ratios                                                   |
-|GPT-5.4 Thinking|5              |ISO 6673 direct citation; 2025–2026 processing literature; bulk vs true density distinction                                              |
-|Perplexity      |5              |Highest source density; Fenrich 2023 proteomics; Cassamo 2022; Somporn 2012; FAO/ICO standards; volcanic soil anti-claim                 |
-|Gemini          |1 (quarantined)|C. stenophylla GWAS 2025; rhizospheric microbiome (MDPI 2023); conceptual framing — source provenance insufficient for direct integration|
+-----
 
-**Revision log:**
+## 9 — Where This Dossier Came From
 
-- v0.1.0 (2026-04-06): Initial curated draft.
-- v0.2.0 (2026-04-06): Freezing pass — status markers added to all parameter rows; roasting-loss table relocated to Appendix A; section structure standardised; coastline voice tightened; production share moved to contextual note; AC-06 wording moderated.
-- v0.3.0 (2026-04-06): Council review pass — BW-02 RESOLVED (350 g confirmed); BW-03 RESOLVED (Salojärvi 2024 definitive); defect equivalence ratios upgraded to FROZEN; BW-01 assigned CL-2026-016 with Architect’s metabolomic flux framing; BW-04 assigned CL-2026-017; BW-05 assigned CL-2026-018 and linked to BW-01; AC-06 status updated to ACTIVE — EVIDENCE CONTRARY; §5.4 “aroma-precursor” qualified as “non-volatile precursors to volatile aromatics”; T1b tier designation added to header; Architect and Scout stances acknowledged in header.
+This dossier was built from raw research notes gathered by five independent AI research agents, each given the same set of questions and evidence rules (Task Card TC-BEANS-001 v1.1). The agents searched different sources and returned notes independently. The results were then compared, cross-checked, and merged into this document.
+
+|Agent           |Files returned              |What it contributed that others did not                                                                                                                                                                                           |
+|----------------|----------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|Claude Opus 4.6 |1 (covering all five topics)|The Worku 2018 altitude × processing interaction data; Salojärvi 2024 genome study                                                                                                                                                |
+|Kimi K2         |5                           |A separate Arabica genome assembly (Kona Typica); microbial species in fermentation; compound correlation data; defect counting ratios                                                                                            |
+|GPT-5.4 Thinking|5                           |Direct citation of the ISO moisture measurement standard; the most recent (2025–2026) processing research; the distinction between bulk and true density                                                                          |
+|Perplexity      |5                           |The largest number of sources overall; a proteomics study (Fenrich 2023); key studies on shade and soil effects; FAO and ICO standards; the volcanic soil anti-claim                                                              |
+|Gemini          |1 (set aside)               |A genetic study on a climate-resilient coffee species (*C. stenophylla*); a study on soil microbes at different altitudes — but the sources could not be independently verified, so this material is excluded from the main tables|
+
+**Revision history:**
+
+- v0.1.0 (2026-04-06): Initial draft.
+- v0.2.0 (2026-04-06): Added status markers to all parameters; moved roasting-loss data to Appendix A; standardised section structure; tightened language.
+- v0.3.0 (2026-04-06): Incorporated review from Architect and Scout stances; resolved two open questions (sample size: 350 g; polyploidy timing: 350–610 kya); assigned tracking numbers to three remaining open questions; updated anti-claim AC-06 status; added tier designation; rewrote for accessibility (plain language, definitions, reduced jargon).
 
 -----
 
 ## 10 — Conclusion: What the Bean Encodes
 
-The green coffee bean arrives at the roaster as a finished biological object. Its genome was fixed hundreds of thousands of years ago by a single hybridisation event. Its density, sugar load, and acid balance were shaped over months of growth under specific conditions of altitude, temperature, rainfall, and shade. Its microbial history was determined during fermentation and drying. By the time it reaches a grading table, it carries a precise chemical inventory — one that constrains the upper bound of what any roast or brew can extract.
+The green coffee bean arrives at the roaster as a finished biological object. Its genetic blueprint was fixed hundreds of thousands of years ago by a single cross between two wild species. Its density, sugar content, and acid balance were shaped over months of growth under specific conditions of altitude, temperature, rainfall, and shade. Its microbial history was determined during fermentation and drying. By the time it reaches a grading table, it carries a precise chemical inventory — one that sets the upper limit of what any roast or brew can extract from it.
 
-Three findings from this curation deserve emphasis.
+Three findings from this review deserve emphasis.
 
-First, Arabica’s genetic narrowness is not a footnote — it is a structural vulnerability. Cultivated Arabica retains less than 1% of the diversity found in wild populations. Every cultivar in the specialty market traces back to the same Bourbon–Typica bottleneck. The species’ future under climate pressure depends on material that currently sits in Ethiopian forests and gene banks, not in commercial plantations.
+First, Arabica’s genetic narrowness is a structural vulnerability, not a footnote. Cultivated Arabica retains less than 1% of the diversity found in wild populations. Every variety in the specialty market traces back to the same Bourbon–Typica bottleneck. The species’ future under climate pressure depends on wild material that currently sits in Ethiopian forests and gene banks, not in commercial plantations.
 
-Second, the most consequential quantitative finding in the terroir literature is an interaction, not a main effect: sucrose accumulation with altitude is significant only in washed beans, not in naturals (Worku et al. 2018). Terroir and processing are not independent layers — they are coupled. The “latent potential” framing for the green bean is useful but incomplete. Processing does not merely expose what altitude deposited; it constrains whether altitude’s contribution is expressed at all.
+Second, the most important quantitative finding in the environmental literature is an interaction, not a simple trend: sucrose accumulation with altitude is significant only in washed beans, not in naturally processed ones (Worku et al. 2018). This means that growing environment and processing are not independent factors — they are coupled. The popular idea that the bean contains a fixed “latent potential” that processing merely reveals is useful but incomplete. Processing does not just expose what altitude deposited; it determines whether altitude’s contribution is expressed at all.
 
-Third, the gap between what can be measured and what is routinely measured remains large. HPLC can quantify chlorogenic acids, caffeine, trigonelline, and sucrose with high precision. Water activity meters predict storage safety better than moisture content alone. NIR spectroscopy is approaching field-deployable accuracy for several compounds. Yet most green coffee in trade is still graded primarily by visual defect count and moisture percentage — metrics that capture only a fraction of the bean’s actual state.
+Third, the gap between what can be measured and what is routinely measured remains large. Laboratory instruments can quantify chlorogenic acids, caffeine, trigonelline, and sucrose with high precision. Water activity meters can predict storage safety better than moisture content alone. Portable spectroscopy is approaching field-level accuracy for several compounds. Yet most green coffee in trade is still graded primarily by visual defect count and moisture percentage — metrics that capture only a fraction of the bean’s actual state.
 
-This dossier does not claim to be complete. It records the evidentiary terrain as of April 2026, drawn from five independent research agents and cross-checked against peer-reviewed literature, standards-body documents, and practitioner knowledge. Where claims conflict, the conflict is preserved. Where evidence is weak, it is marked accordingly. The ten anti-claims in §6 are not editorial positions — they are statements whose evidential support was tested and found insufficient by the sources reviewed.
+This dossier does not claim to be complete. It records the state of knowledge as of April 2026, drawn from five independent research agents and cross-checked against scientific papers, standards-body documents, and practitioner expertise. Where sources conflict, the conflict is preserved. Where evidence is weak, it is marked accordingly. The ten anti-claims in §6 are not editorial positions — they are statements whose evidence was tested and found insufficient.
 
-The bean encodes its genetics, its environment, its fermentation history, and its moisture state. It does not encode roast profile, extraction regime, or serving conditions. Those belong to downstream dossiers. This one ends where heat begins.
-
------
-
-## Appendix A — Interface to Roast Dossier: Precursor Stability Under Thermal Transformation
-
-This table is provided as a reference for the Roast dossier. It describes behaviour under thermal transformation and therefore falls outside the Beans boundary condition. It is included here solely to document the handoff point.
-
-|Compound         |Typical change during roasting|Notes                                            |Status     |
-|-----------------|------------------------------|-------------------------------------------------|-----------|
-|Chlorogenic acids|~54% loss                     |Degrades to phenolic compounds                   |PROVISIONAL|
-|Trigonelline     |~7.7% loss                    |→ nicotinic acid + pyridines/pyrroles            |PROVISIONAL|
-|Caffeine         |~2.5% loss                    |Highly thermally stable                          |FROZEN     |
-|Sucrose          |Near-complete loss            |→ reducing sugars → Maillard/caramelisation      |FROZEN     |
-|Amino acids      |Variable                      |Serine/cysteine >50% loss; arginine complete loss|PROVISIONAL|
+The bean encodes its genetics, its environment, its fermentation history, and its moisture state. It does not encode roast profile, brewing method, or serving conditions. Those belong to later documents. This one ends where heat begins.
 
 -----
 
-*Coastline dossier v0.3.0 — curated under Guardian stance with Architect and Scout review. Parameters marked FROZEN are stable for citation. PROVISIONAL entries await replication or independent verification. OPEN entries require Breakwater resolution. QUARANTINED entries are excluded from parameter tables pending source verification. Breakwater entries CL-2026-016, -017, -018 assigned.*
+## Appendix A — What Happens to These Compounds During Roasting (Reference for the Roast Dossier)
+
+This table falls outside the scope of the Beans dossier — it describes changes that occur during roasting. It is included here only to show how the green-bean compounds connect to the next stage.
+
+|Compound         |What happens during roasting|Notes                                                                                                                      |Status     |
+|-----------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------|-----------|
+|Chlorogenic acids|Roughly 54% are lost        |Break down into smaller phenolic compounds that contribute to bitterness                                                   |PROVISIONAL|
+|Trigonelline     |Roughly 7.7% is lost        |Converts to nicotinic acid (vitamin B3) and aromatic pyridine compounds                                                    |PROVISIONAL|
+|Caffeine         |Roughly 2.5% is lost        |Very heat-stable; survives roasting almost unchanged                                                                       |FROZEN     |
+|Sucrose          |Nearly all is lost          |Breaks down into simpler sugars that then react with amino acids (Maillard reactions) to produce colour, flavour, and aroma|FROZEN     |
+|Amino acids      |Variable losses             |Some (serine, cysteine) lose more than half; others (arginine) are completely consumed                                     |PROVISIONAL|
+
+-----
+
+*Dossier v0.3.0 — reviewed under Guardian, Architect, and Scout stances. FROZEN parameters are stable for citation. PROVISIONAL entries await further confirmation. OPEN questions are tracked under CL-2026-016, -017, and -018.*
