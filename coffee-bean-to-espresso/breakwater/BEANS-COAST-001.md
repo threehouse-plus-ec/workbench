@@ -6,74 +6,36 @@
 **Parent:** Coffee / Espresso Essay (CL-2026-010)  
 **Tier:** T1b (Metrological)  
 **Stance:** Guardian (with Architect and Scout review incorporated)  
-**Curated from:** TC-BEANS-001 v1.1 raw returns (Claude, Kimi K2, GPT-5.4,
-Perplexity, Gemini — Gemini quarantined pending source verification)
+**Curated from:** TC-BEANS-001 v1.1 raw returns (Claude, Kimi K2, GPT-5.4, Perplexity, Gemini — Gemini quarantined pending source verification)
 
 **Status key:**
-`FROZEN` — verified, stable, ready for citation.
-`PROVISIONAL` — supported by evidence but awaiting replication
-or independent verification. `OPEN` — unresolved; requires
-Breakwater analysis. `QUARANTINED` — source provenance
-insufficient; excluded from parameter tables pending verification.
+
+- `FROZEN` — verified, stable, ready for citation.
+- `PROVISIONAL` — supported by evidence but awaiting replication or independent verification.
+- `OPEN` — unresolved; requires Breakwater analysis.
+- `QUARANTINED` — source provenance insufficient; excluded from parameter tables pending verification.
 
 -----
 
 ## Introduction — How to Read This Dossier
 
-A green coffee bean is a seed that has never been roasted. The sugars
-that will caramelise, the acids that will define brightness, the
-proteins that will react with those sugars to generate aroma — all
-are already present, or absent, before the roaster applies heat.
-This dossier records the state of that starting material.
+A green coffee bean is a seed that has never been roasted. The sugars that will caramelise, the acids that will define brightness, the proteins that will react with those sugars to generate aroma — all are already present, or absent, before the roaster applies heat. This dossier records the state of that starting material.
 
-The document is organised around five parameter groups, each covering
-a distinct aspect of the green bean’s identity: what species and
-cultivar it is (§1 Botanical Identity), where and how it grew
-(§2 Terroir Envelope), what happened between harvest and export
-(§3 Post-Harvest Processing), what can be measured with instruments
-(§4 Physical Metrics), and what molecules it contains
-(§5 Precursor Chemistry). These five groups follow the
-irreversibility boundaries of the bean’s formation. Genetics is
-fixed at pollination. Terroir accumulates during growth. Processing
-intervenes after harvest. Physical metrics are assessed at the point
-of trade. Chemistry encodes the final state of the substrate before
-thermal transformation begins.
+The document is organised around five parameter groups, each covering a distinct aspect of the green bean’s identity: what species and cultivar it is (§1 Botanical Identity), where and how it grew (§2 Terroir Envelope), what happened between harvest and export (§3 Post-Harvest Processing), what can be measured with instruments (§4 Physical Metrics), and what molecules it contains (§5 Precursor Chemistry). These five groups follow the irreversibility boundaries of the bean’s formation. Genetics is fixed at pollination. Terroir accumulates during growth. Processing intervenes after harvest. Physical metrics are assessed at the point of trade. Chemistry encodes the final state of the substrate before thermal transformation begins.
 
-Each parameter group follows a uniform internal structure:
-(a) declared parameters with status markers, (b) validity contract,
-(c) open disputes, and (d) notes for downstream interface where
-relevant.
+Each parameter group follows a uniform internal structure: (a) declared parameters with status markers, (b) validity contract, (c) open disputes, and (d) notes for downstream interface where relevant.
 
-Two cautions for the reader. First, the ranges in this dossier span
-multiple origins, cultivars, and studies. Any single lot of green
-coffee will occupy a narrower window within these ranges. Second,
-this dossier describes what is in the bean, not what ends up in the
-cup. The transformation from precursor chemistry to sensory
-experience passes through roasting and extraction — those are
-separate dossiers with their own boundary conditions.
+Two cautions for the reader. First, the ranges in this dossier span multiple origins, cultivars, and studies. Any single lot of green coffee will occupy a narrower window within these ranges. Second, this dossier describes what is in the bean, not what ends up in the cup. The transformation from precursor chemistry to sensory experience passes through roasting and extraction — those are separate dossiers with their own boundary conditions.
 
-Current evidence supports that post-harvest processing can alter the
-bean’s metabolomic and precursor profile, not merely sort or expose
-pre-existing potential. The extent and mechanism of this reshaping
-remain parameter-dependent and are not yet fully closed. This is
-flagged as BW-01 in §7.
+Current evidence supports that post-harvest processing can alter the bean’s metabolomic and precursor profile, not merely sort or expose pre-existing potential. The extent and mechanism of this reshaping remain parameter-dependent and are not yet fully closed. This is flagged as BW-01 in §7.
 
 -----
 
 ## 0 — Boundary Condition
 
-**Nothing in this dossier has undergone thermal transformation.**
-The moment Maillard reactions or pyrolysis begin, the material
-belongs to the Roast dossier. Processing-induced fermentation is
-included because it occurs before export and defines the green
-bean’s chemical starting state — but the dossier acknowledges that
-processing can reshape precursor chemistry, not merely expose it
-(see Anti-Claim AC-06; Breakwater BW-01).
+**Nothing in this dossier has undergone thermal transformation.** The moment Maillard reactions or pyrolysis begin, the material belongs to the Roast dossier. Processing-induced fermentation is included because it occurs before export and defines the green bean’s chemical starting state — but the dossier acknowledges that processing can reshape precursor chemistry, not merely expose it (see Anti-Claim AC-06; Breakwater BW-01).
 
-**Out of scope:** roast degree, first crack, development time,
-espresso extraction variables, cup sensory evaluation except where
-directly linked to green-bean composition by experimental evidence,
-roasting-loss data (relocated to Appendix A as interface reference).
+**Out of scope:** roast degree, first crack, development time, espresso extraction variables, cup sensory evaluation except where directly linked to green-bean composition by experimental evidence, roasting-loss data (relocated to Appendix A as interface reference).
 
 -----
 
@@ -91,63 +53,31 @@ roasting-loss data (relocated to Appendix A as interface reference).
 |Foundational cultivar lineages|Typica group, Bourbon group                                            |FROZEN|STRONG    |WCR Varieties Catalog (2024)    |
 |Cultivated genetic diversity  |<1% of wild Arabica diversity                                          |FROZEN|STRONG    |Salojärvi 2024                  |
 
-**Contextual note (not a bean-intrinsic parameter):**
-Arabica accounts for ~60% of global production, Robusta ~40% (ICO
-data, temporally variable). This ratio constrains market context
-but does not describe the material substrate.
+**Contextual note (not a bean-intrinsic parameter):** Arabica accounts for ~60% of global production, Robusta ~40% (ICO data, temporally variable). This ratio constrains market context but does not describe the material substrate.
 
 ### 1.2 Cultivar Classification
 
-The following uses WCR terminology. Terms are labelled by
-taxonomic rank: species, botanical variety, cultivar, landrace,
-hybrid group, or trade designation.
+The following uses WCR terminology. Terms are labelled by taxonomic rank: species, botanical variety, cultivar, landrace, hybrid group, or trade designation.
 
-**Bourbon–Typica lineage (botanical varieties / cultivar groups):**
-Typica (tall, low yield, high rust susceptibility, valued for
-sweetness and clarity); Bourbon (moderately tall, higher yield than
-Typica, red/yellow variants); Caturra (Bourbon mutation, dwarf
-habit, high rust susceptibility); Catuaí (Caturra × Mundo Novo
-cross, compact, high yield, moderate rust susceptibility); Mundo
-Novo (Typica × Bourbon natural hybrid, vigorous, tall).
+**Bourbon–Typica lineage (botanical varieties / cultivar groups):** Typica (tall, low yield, high rust susceptibility, valued for sweetness and clarity); Bourbon (moderately tall, higher yield than Typica, red/yellow variants); Caturra (Bourbon mutation, dwarf habit, high rust susceptibility); Catuaí (Caturra × Mundo Novo cross, compact, high yield, moderate rust susceptibility); Mundo Novo (Typica × Bourbon natural hybrid, vigorous, tall).
 
-**Ethiopian landraces:** Genetically heterogeneous, locally adapted
-populations — not single cultivars. “Ethiopian Heirloom” is a
-trade designation that collapses >10,000 identified varieties.
+**Ethiopian landraces:** Genetically heterogeneous, locally adapted populations — not single cultivars. “Ethiopian Heirloom” is a trade designation that collapses >10,000 identified varieties.
 
-**Kenyan selections:** SL-28 and SL-34 (Scott Agricultural
-Laboratories, 1930s; Bourbon-related genetic group; high cup
-quality, rust susceptible). Ruiru 11 (SL28 × Rume Sudan hybrid,
-1980s; rust resistant). Batian (Ruiru 11 × SL28 cross; rust
-resistant, balanced cup).
+**Kenyan selections:** SL-28 and SL-34 (Scott Agricultural Laboratories, 1930s; Bourbon-related genetic group; high cup quality, rust susceptible). Ruiru 11 (SL28 × Rume Sudan hybrid, 1980s; rust resistant). Batian (Ruiru 11 × SL28 cross; rust resistant, balanced cup).
 
-**Gesha/Geisha (cultivar):** Ethiopian origin (Gori Gesha forest
-accessions). Elongated seeds, low-to-moderate yield. Showed close
-relationships to both wild and cultivated Arabica in the 2024
-genome study. Quality expression is strongly terroir- and
-process-dependent, not intrinsic (see AC-07).
+**Gesha/Geisha (cultivar):** Ethiopian origin (Gori Gesha forest accessions). Elongated seeds, low-to-moderate yield. Showed close relationships to both wild and cultivated Arabica in the 2024 genome study. Quality expression is strongly terroir- and process-dependent, not intrinsic (see AC-07).
 
-**Introgressed hybrid groups:** Catimor (Caturra × Timor Hybrid);
-Sarchimor (Villa Sarchi × Timor Hybrid); Castillo (Colombian
-Cenicafé selection); Starmaya (F1 hybrid, Marsellesa × wild
-Ethiopian/Sudanese mutant). All carry C. canephora rust-resistance
-genes via Timor Hybrid ancestry. Variable cup quality.
+**Introgressed hybrid groups:** Catimor (Caturra × Timor Hybrid); Sarchimor (Villa Sarchi × Timor Hybrid); Castillo (Colombian Cenicafé selection); Starmaya (F1 hybrid, Marsellesa × wild Ethiopian/Sudanese mutant). All carry C. canephora rust-resistance genes via Timor Hybrid ancestry. Variable cup quality.
 
 ### 1.3 Validity Contract
 
 - Chromosome counts are fixed genetic facts; no revision expected.
-- Cultivar classifications follow WCR Varieties Catalog (2024
-  edition) as the reference authority. Where WCR and trade usage
-  diverge, WCR takes precedence.
-- “Ethiopian Heirloom” must not be treated as a single cultivar
-  in any downstream analysis.
+- Cultivar classifications follow WCR Varieties Catalog (2024 edition) as the reference authority. Where WCR and trade usage diverge, WCR takes precedence.
+- “Ethiopian Heirloom” must not be treated as a single cultivar in any downstream analysis.
 
 ### 1.4 Open Disputes
 
-- The terminology “variety” vs “cultivar” vs “landrace” is used
-  inconsistently across scientific, breeding, and trade sources.
-  This dossier follows the WCR convention but flags that
-  reclassification of some entries (e.g. SL-28, Gesha) into
-  genetic groups is still ongoing (Salojärvi 2024).
+- The terminology “variety” vs “cultivar” vs “landrace” is used inconsistently across scientific, breeding, and trade sources. This dossier follows the WCR convention but flags that reclassification of some entries (e.g. SL-28, Gesha) into genetic groups is still ongoing (Salojärvi 2024).
 
 ### 1.5 Downstream Interface — Recent Genomics (2020–2026)
 
@@ -188,15 +118,9 @@ genes via Timor Hybrid ancestry. Variable cup quality.
 
 ### 2.3 Validity Contract
 
-- Altitude is a proxy variable. The causal drivers are temperature,
-  oxygen availability, and light regime, all of which co-vary with
-  elevation. The dossier does not endorse altitude as a direct
-  causal agent.
-- Terroir effects are interaction-dependent: altitude × shade,
-  altitude × processing, altitude × cultivar. Single-variable
-  claims are flagged as compressed heuristics.
-- Soil → flavour claims require controlled studies isolating soil
-  chemistry from other terroir variables. Currently: WEAK evidence.
+- Altitude is a proxy variable. The causal drivers are temperature, oxygen availability, and light regime, all of which co-vary with elevation. The dossier does not endorse altitude as a direct causal agent.
+- Terroir effects are interaction-dependent: altitude × shade, altitude × processing, altitude × cultivar. Single-variable claims are flagged as compressed heuristics.
+- Soil → flavour claims require controlled studies isolating soil chemistry from other terroir variables. Currently: WEAK evidence.
 
 ### 2.4 Open Disputes
 
@@ -212,13 +136,7 @@ genes via Timor Hybrid ancestry. Variable cup quality.
 
 ### 2.5 Downstream Interface
 
-- The Worku 2018 sucrose × altitude × processing interaction
-  (§2.2) has direct implications for the Roast dossier: the
-  sugar substrate available for Maillard reactions depends on
-  both terroir and processing, not terroir alone.
-- Shade × altitude interactions (Bosselmann et al., Cassamo et
-  al. 2022) suggest that shade management is not uniformly
-  beneficial and must be specified by elevation band.
+The Worku 2018 sucrose × altitude × processing interaction (§2.2) has direct implications for the Roast dossier: the sugar substrate available for Maillard reactions depends on both terroir and processing, not terroir alone. Shade × altitude interactions (Bosselmann et al., Cassamo et al. 2022) suggest that shade management is not uniformly beneficial and must be specified by elevation band.
 
 -----
 
@@ -236,20 +154,13 @@ genes via Timor Hybrid ancestry. Variable cup quality.
 
 **Notes on chemical effects (confidence-labelled):**
 
-- Washed processing reduces variability in mucilage-derived
-  metabolites and tends to preserve intrinsic bean character.
-  [MODERATE — consistent with multiple sources but not
-  quantitatively bounded]
-- Natural processing results in higher residual sugar and more
-  variable moisture distribution compared with washed lots from
-  the same origin. [MODERATE — established pattern, not universal]
-- Processing method significantly affects bioactive and volatile
-  compound profiles in green beans (Várady et al. 2022, P = 0.04
-  for CGA differences). [FROZEN]
+- Washed processing reduces variability in mucilage-derived metabolites and tends to preserve intrinsic bean character. [MODERATE — consistent with multiple sources but not quantitatively bounded]
+- Natural processing results in higher residual sugar and more variable moisture distribution compared with washed lots from the same origin. [MODERATE — established pattern, not universal]
+- Processing method significantly affects bioactive and volatile compound profiles in green beans (Várady et al. 2022, P = 0.04 for CGA differences). [FROZEN]
 
 ### 3.2 Microbial Ecology
 
-Dominant taxa reported across studies (not necessarily universal):
+Dominant taxa reported across studies (not necessarily universal — representative of selected fermentation conditions, not exhaustive):
 
 |Condition             |Dominant bacterial genera                        |Dominant yeast genera                      |Status     |
 |----------------------|-------------------------------------------------|-------------------------------------------|-----------|
@@ -257,34 +168,17 @@ Dominant taxa reported across studies (not necessarily universal):
 |Semi-anaerobic        |*Acetobacter* (increased)                        |—                                          |PROVISIONAL|
 |Anaerobic fermentation|—                                                |*Pichia*, *Issatchenkia*, *Wickerhamomyces*|PROVISIONAL|
 
-These are representative taxa from selected studies (Kimi: PMC
-2025; Perplexity: multiple). Generalisability across origins and
-fermentation setups is not yet established.
-
 ### 3.3 Validity Contract
 
-- Processing changes the metabolomic profile of the bean itself,
-  not just surface metabolites (SCA 25 Magazine, Issue 10; Várady
-  et al. 2022/2024). The extent is parameter-dependent.
-- “Carbonic maceration” in coffee is not used with wine-industry
-  strictness (GPT flag). The term covers closed/CO₂-rich cherry
-  fermentation, not always true intracellular fermentation.
-- The dossier treats processing as the first intentional
-  transformation. It belongs in the Beans dossier because it
-  occurs before export and defines the green bean’s chemical
-  starting state.
+- Processing changes the metabolomic profile of the bean itself, not just surface metabolites (SCA 25 Magazine, Issue 10; Várady et al. 2022/2024). The extent is parameter-dependent.
+- “Carbonic maceration” in coffee is not used with wine-industry strictness (GPT flag). The term covers closed/CO₂-rich cherry fermentation, not always true intracellular fermentation.
+- The dossier treats processing as the first intentional transformation. It belongs in the Beans dossier because it occurs before export and defines the green bean’s chemical starting state.
 
 ### 3.4 Open Disputes
 
-- Optimal fermentation times vary widely by climate, altitude,
-  and microbial environment; universal recommendations are not
-  evidence-based.
-- Many claims about anaerobic/carbonic maceration producing
-  specific flavour outcomes lack controlled experimental
-  validation. [MARKETING risk]
-- The line between genuine analytical innovation and marketing
-  theatre is not always clear in experimental processing
-  terminology.
+- Optimal fermentation times vary widely by climate, altitude, and microbial environment; universal recommendations are not evidence-based.
+- Many claims about anaerobic/carbonic maceration producing specific flavour outcomes lack controlled experimental validation. [MARKETING risk]
+- The line between genuine analytical innovation and marketing theatre is not always clear in experimental processing terminology.
 
 ### 3.5 Downstream Interface — Defect Pathways
 
@@ -322,22 +216,16 @@ fermentation setups is not yet established.
 
 ### 4.3 Validity Contract
 
-- Moisture content and water activity are not interchangeable.
-  aw is the more predictive metric for storage safety.
-- Bulk density ≠ true density. Any cross-source density
-  comparison requires method specification.
+- Moisture content and water activity are not interchangeable. aw is the more predictive metric for storage safety.
+- Bulk density ≠ true density. Any cross-source density comparison requires method specification.
 - Screen size measures uniformity, not flavour quality.
 
 ### 4.4 Open Disputes
 
-- **SCA defect sample size (BW-02): RESOLVED.** Architect review
-  confirms 350 g per current SCA GACCS (2023/2024 revision). The
-  300 g figure in some agent returns derives from legacy ICO/FAO
-  standards or Robusta-specific protocols.
-- Density alone does not predict quality; cultivar, processing,
-  and storage can produce exceptions.
+- **SCA defect sample size (BW-02): RESOLVED.** Architect review confirms 350 g per current SCA GACCS (2023/2024 revision). The 300 g figure in some agent returns derives from legacy ICO/FAO standards or Robusta-specific protocols.
+- Density alone does not predict quality; cultivar, processing, and storage can produce exceptions.
 
-### 4.5 Defect Equivalence Ratios (from SCA/Kimi)
+### 4.5 Defect Equivalence Ratios
 
 |Defect type        |Count for 1 full defect|Status|
 |-------------------|-----------------------|------|
@@ -347,8 +235,7 @@ fermentation setups is not yet established.
 |Floater            |5                      |FROZEN|
 |Insect-damaged bean|2–5                    |FROZEN|
 
-Status upgraded to FROZEN following BW-02 resolution (350 g
-confirmed per SCA GACCS 2023/2024).
+Status upgraded to FROZEN following BW-02 resolution (350 g confirmed per SCA GACCS 2023/2024).
 
 -----
 
@@ -389,25 +276,15 @@ confirmed per SCA GACCS 2023/2024).
 ### 5.4 Validity Contract
 
 - All ranges are dry-weight basis unless explicitly marked “as-is.”
-- Ranges capture inter-origin and inter-cultivar variation; any
-  single-origin study will show a narrower window.
-- Volatile precursor mapping at the green-bean stage remains
-  incomplete. This is a genuine research gap, not a search failure.
-- Aroma-precursor → roasted-aroma mapping is statistical, not
-  mechanistically closed. Strictly: the compounds in §5.1 are
-  non-volatile precursors to volatile aromatics generated during
-  roasting. The dossier does not endorse deterministic
-  precursor-to-flavour claims.
+- Ranges capture inter-origin and inter-cultivar variation; any single-origin study will show a narrower window.
+- Volatile precursor mapping at the green-bean stage remains incomplete. This is a genuine research gap, not a search failure.
+- Aroma-precursor → roasted-aroma mapping is statistical, not mechanistically closed. Strictly: the compounds in §5.1 are non-volatile precursors to volatile aromatics generated during roasting. The dossier does not endorse deterministic precursor-to-flavour claims.
 
 ### 5.5 Open Disputes
 
-- Exact ranges for CGA and lipids vary with dry-basis conventions,
-  origin, cultivar, and analytical method.
-- The relative importance of specific precursor classes (CGA vs
-  sucrose vs proteins) for flavour formation is not settled;
-  consensus is that multiple classes interact.
-- NIR prediction models for sugars and lipids show variable
-  accuracy across studies.
+- Exact ranges for CGA and lipids vary with dry-basis conventions, origin, cultivar, and analytical method.
+- The relative importance of specific precursor classes (CGA vs sucrose vs proteins) for flavour formation is not settled; consensus is that multiple classes interact.
+- NIR prediction models for sugars and lipids show variable accuracy across studies.
 
 -----
 
@@ -455,8 +332,7 @@ confirmed per SCA GACCS 2023/2024).
 
 ## 9 — Provenance
 
-This dossier was curated from raw research notes gathered under
-TC-BEANS-001 v1.1. Contributing agents:
+This dossier was curated from raw research notes gathered under TC-BEANS-001 v1.1. Contributing agents:
 
 |Agent           |Files          |Unique contributions                                                                                                                     |
 |----------------|---------------|-----------------------------------------------------------------------------------------------------------------------------------------|
@@ -468,86 +344,33 @@ TC-BEANS-001 v1.1. Contributing agents:
 
 **Revision log:**
 
-- v0.1.0 (2026-04-06): initial curated draft.
-- v0.2.0 (2026-04-06): freezing pass — status markers added to all
-  parameter rows; roasting-loss table relocated to Appendix A;
-  section structure standardised; coastline voice tightened;
-  production share moved to contextual note; AC-06 wording moderated.
-- v0.3.0 (2026-04-06): Council review pass — BW-02 RESOLVED (350 g
-  confirmed); BW-03 RESOLVED (Salojärvi 2024 definitive); defect
-  equivalence ratios upgraded to FROZEN; BW-01 assigned CL-2026-016
-  with Architect’s metabolomic flux framing; BW-04 assigned
-  CL-2026-017; BW-05 assigned CL-2026-018 and linked to BW-01;
-  AC-06 status updated to ACTIVE — EVIDENCE CONTRARY; §5.4
-  “aroma-precursor” qualified as “non-volatile precursors to
-  volatile aromatics”; T1b tier designation added to header;
-  Architect and Scout stances acknowledged in header.
+- v0.1.0 (2026-04-06): Initial curated draft.
+- v0.2.0 (2026-04-06): Freezing pass — status markers added to all parameter rows; roasting-loss table relocated to Appendix A; section structure standardised; coastline voice tightened; production share moved to contextual note; AC-06 wording moderated.
+- v0.3.0 (2026-04-06): Council review pass — BW-02 RESOLVED (350 g confirmed); BW-03 RESOLVED (Salojärvi 2024 definitive); defect equivalence ratios upgraded to FROZEN; BW-01 assigned CL-2026-016 with Architect’s metabolomic flux framing; BW-04 assigned CL-2026-017; BW-05 assigned CL-2026-018 and linked to BW-01; AC-06 status updated to ACTIVE — EVIDENCE CONTRARY; §5.4 “aroma-precursor” qualified as “non-volatile precursors to volatile aromatics”; T1b tier designation added to header; Architect and Scout stances acknowledged in header.
 
 -----
 
 ## 10 — Conclusion: What the Bean Encodes
 
-The green coffee bean arrives at the roaster as a finished biological
-object. Its genome was fixed hundreds of thousands of years ago by a
-single hybridisation event. Its density, sugar load, and acid balance
-were shaped over months of growth under specific conditions of
-altitude, temperature, rainfall, and shade. Its microbial history
-was determined during fermentation and drying. By the time it reaches
-a grading table, it carries a precise chemical inventory — one that
-constrains the upper bound of what any roast or brew can extract.
+The green coffee bean arrives at the roaster as a finished biological object. Its genome was fixed hundreds of thousands of years ago by a single hybridisation event. Its density, sugar load, and acid balance were shaped over months of growth under specific conditions of altitude, temperature, rainfall, and shade. Its microbial history was determined during fermentation and drying. By the time it reaches a grading table, it carries a precise chemical inventory — one that constrains the upper bound of what any roast or brew can extract.
 
 Three findings from this curation deserve emphasis.
 
-First, Arabica’s genetic narrowness is not a footnote — it is a
-structural vulnerability. Cultivated Arabica retains less than 1% of
-the diversity found in wild populations. Every cultivar in the
-specialty market traces back to the same Bourbon–Typica bottleneck.
-The species’ future under climate pressure depends on material that
-currently sits in Ethiopian forests and gene banks, not in commercial
-plantations.
+First, Arabica’s genetic narrowness is not a footnote — it is a structural vulnerability. Cultivated Arabica retains less than 1% of the diversity found in wild populations. Every cultivar in the specialty market traces back to the same Bourbon–Typica bottleneck. The species’ future under climate pressure depends on material that currently sits in Ethiopian forests and gene banks, not in commercial plantations.
 
-Second, the most consequential quantitative finding in the terroir
-literature is an interaction, not a main effect: sucrose accumulation
-with altitude is significant only in washed beans, not in naturals
-(Worku et al. 2018). Terroir and processing are not independent
-layers — they are coupled. The “latent potential” framing for the
-green bean is useful but incomplete. Processing does not merely
-expose what altitude deposited; it constrains whether altitude’s
-contribution is expressed at all.
+Second, the most consequential quantitative finding in the terroir literature is an interaction, not a main effect: sucrose accumulation with altitude is significant only in washed beans, not in naturals (Worku et al. 2018). Terroir and processing are not independent layers — they are coupled. The “latent potential” framing for the green bean is useful but incomplete. Processing does not merely expose what altitude deposited; it constrains whether altitude’s contribution is expressed at all.
 
-Third, the gap between what can be measured and what is routinely
-measured remains large. HPLC can quantify chlorogenic acids,
-caffeine, trigonelline, and sucrose with high precision. Water
-activity meters predict storage safety better than moisture content
-alone. NIR spectroscopy is approaching field-deployable accuracy for
-several compounds. Yet most green coffee in trade is still graded
-primarily by visual defect count and moisture percentage — metrics
-that capture only a fraction of the bean’s actual state.
+Third, the gap between what can be measured and what is routinely measured remains large. HPLC can quantify chlorogenic acids, caffeine, trigonelline, and sucrose with high precision. Water activity meters predict storage safety better than moisture content alone. NIR spectroscopy is approaching field-deployable accuracy for several compounds. Yet most green coffee in trade is still graded primarily by visual defect count and moisture percentage — metrics that capture only a fraction of the bean’s actual state.
 
-This dossier does not claim to be complete. It records the
-evidentiary terrain as of April 2026, drawn from five independent
-research agents and cross-checked against peer-reviewed literature,
-standards-body documents, and practitioner knowledge. Where claims
-conflict, the conflict is preserved. Where evidence is weak, it is
-marked accordingly. The ten anti-claims in §6 are not editorial
-positions — they are statements whose evidential support was tested
-and found insufficient by the sources reviewed.
+This dossier does not claim to be complete. It records the evidentiary terrain as of April 2026, drawn from five independent research agents and cross-checked against peer-reviewed literature, standards-body documents, and practitioner knowledge. Where claims conflict, the conflict is preserved. Where evidence is weak, it is marked accordingly. The ten anti-claims in §6 are not editorial positions — they are statements whose evidential support was tested and found insufficient by the sources reviewed.
 
-The bean encodes its genetics, its environment, its fermentation
-history, and its moisture state. It does not encode roast profile,
-extraction regime, or serving conditions. Those belong to downstream
-dossiers. This one ends where heat begins.
+The bean encodes its genetics, its environment, its fermentation history, and its moisture state. It does not encode roast profile, extraction regime, or serving conditions. Those belong to downstream dossiers. This one ends where heat begins.
 
 -----
 
-## Appendix A — Interface to Roast Dossier: Precursor Stability
+## Appendix A — Interface to Roast Dossier: Precursor Stability Under Thermal Transformation
 
-Under Thermal Transformation
-
-This table is provided as a reference for the Roast dossier. It
-describes behaviour under thermal transformation and therefore falls
-outside the Beans boundary condition. It is included here solely to
-document the handoff point.
+This table is provided as a reference for the Roast dossier. It describes behaviour under thermal transformation and therefore falls outside the Beans boundary condition. It is included here solely to document the handoff point.
 
 |Compound         |Typical change during roasting|Notes                                            |Status     |
 |-----------------|------------------------------|-------------------------------------------------|-----------|
@@ -559,10 +382,4 @@ document the handoff point.
 
 -----
 
-*Coastline dossier v0.3.0 — curated under Guardian stance with
-Architect and Scout review. Parameters marked FROZEN are stable
-for citation. PROVISIONAL entries await replication or independent
-verification. OPEN entries require Breakwater resolution.
-QUARANTINED entries are excluded from parameter tables pending
-source verification. Breakwater entries CL-2026-016, -017, -018
-assigned.*
+*Coastline dossier v0.3.0 — curated under Guardian stance with Architect and Scout review. Parameters marked FROZEN are stable for citation. PROVISIONAL entries await replication or independent verification. OPEN entries require Breakwater resolution. QUARANTINED entries are excluded from parameter tables pending source verification. Breakwater entries CL-2026-016, -017, -018 assigned.*
